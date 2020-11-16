@@ -7,7 +7,6 @@ let arrayObj = [
 ];
 let newArrayObj=[];
 for(let i=0; i<arrayObj.length; i++){
-  let letter = randLetter();
-  newArrayObj[i] = {...arrayObj[i], position: `${letter}`};
+  newArrayObj[i] = {...arrayObj[i], position: randLetter()};
 }
 console.log(newArrayObj);
